@@ -1,0 +1,23 @@
+
+def palindrome(word):
+    reversed_letter = [];
+
+    for letter in word:
+        reversed_letter.insert(0, letter)
+    reversed_word = ''.join(reversed_letter)
+
+    if reversed_word == word:
+        return True
+    return False
+
+
+
+if __name__ == "__main__":
+    word = str(input('Escribe una palabra: '))
+
+    result = palindrome(word)
+
+    if result is True:
+        print('La palabra {} es una palidromo'.format(word))
+    else:
+        print('La palabra {} NO es una palidromo'.format(word))
