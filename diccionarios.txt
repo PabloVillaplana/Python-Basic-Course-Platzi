@@ -1,0 +1,19 @@
+calificaciones ={}
+calificaciones['Algoritmos']=9
+calificaciones['Matematicas']=10
+calificaciones['Web']=8
+calificaciones['Bases de Datos']=10
+for key in calificaciones:
+  print(key)
+
+forvaluein calificaciones.values():
+  print(value)
+
+for key, valuein calificaciones.items():
+  print('llave: {}, valor:{}'.format(key, value))
+
+suma_calificaciones = 0
+for calificacion in calificaciones.values():
+  suma_calificaciones += calificacion
+
+print(suma_calificaciones/len(calificaciones.values()))
